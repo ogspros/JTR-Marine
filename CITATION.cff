@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this code or the pre-trained models, please cite the accompanying paper."
+title: "JTR-Marine: joint training across streamer geometries for missing-trace reconstruction"
+abstract: >-
+  Code and pre-trained models accompanying the paper "Joint training across
+  streamer geometries for missing-trace reconstruction: A comparative
+  evaluation on real marine data". A single compact U-Net conditioned on
+  streamer length (FiLM) is trained jointly on six real marine lines with
+  1500, 3000 and 4500 m streamers and compared with POCS, MSSA, the Chai
+  et al. (2020) U-Net and other deep-learning variants on held-out lines and
+  on Marmousi.
+repository-code: "https://github.com/ogspros/JTR-Marine"
+authors:
+  - family-names: Brancatelli
+    given-names: Giuseppe
+    email: gbrancatelli@ogs.it
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy"
+  - family-names: Lipari
+    given-names: Vincenzo
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy"
+  - family-names: Forlin
+    given-names: Edy
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy"
+  - family-names: Pignelli
+    given-names: Rogerio
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy; Department of Mathematics, Informatics and Geosciences, University of Trieste, Trieste, Italy"
+  - family-names: Busetti
+    given-names: Martina
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy"
+  - family-names: Geletti
+    given-names: Riccardo
+    affiliation: "National Institute of Oceanography and Applied Geophysics (OGS), Trieste, Italy"
+license: MIT
+keywords:
+  - seismic interpolation
+  - missing-trace reconstruction
+  - deep learning
+  - U-Net
+  - FiLM conditioning
+  - marine seismic
+  - cross-survey validation
+preferred-citation:
+  type: article
+  title: "Joint training across streamer geometries for missing-trace reconstruction: A comparative evaluation on real marine data"
+  journal: "Journal of Applied Geophysics"
+  year: 2026
+  doi: "10.1016/j.jappgeo.2026.106621"
+  # volume and article number: to be added when the issue is published
+  authors:
+    - family-names: Brancatelli
+      given-names: Giuseppe
+    - family-names: Lipari
+      given-names: Vincenzo
+    - family-names: Forlin
+      given-names: Edy
+    - family-names: Pignelli
+      given-names: Rogerio
+    - family-names: Busetti
+      given-names: Martina
+    - family-names: Geletti
+      given-names: Riccardo
+  notes: "accepted"

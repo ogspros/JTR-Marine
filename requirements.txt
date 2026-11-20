@@ -1,0 +1,18 @@
+# Core scientific stack
+numpy>=1.24,<2.0
+scipy>=1.11
+matplotlib>=3.7
+
+# Deep learning
+torch>=2.0
+torchvision>=0.15
+
+# Seismic data I/O
+segyio>=1.9
+
+# Image quality metrics
+scikit-image>=0.21
+
+# Statistics & utilities
+pandas>=2.0
+tqdm>=4.65

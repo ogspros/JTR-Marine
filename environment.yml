@@ -1,0 +1,27 @@
+# JTR-Marine environment (author: Giuseppe Brancatelli)
+# Versions used for the paper: Python 3.11, PyTorch 2.4, CUDA 12.1.
+name: jtr-marine
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.4
+  - torchvision
+  - pytorch-cuda=12.1        # remove this line for a CPU-only installation
+  - numpy>=1.24,<2.0
+  - scipy>=1.11
+  - matplotlib>=3.7
+  - scikit-image>=0.21
+  - pandas>=2.0
+  - tqdm>=4.65
+  - pytest
+  # only for the map of Fig. 1:
+  - cartopy
+  - pyproj
+  - shapely
+  - pyshp
+  - pip
+  - pip:
+      - segyio>=1.9

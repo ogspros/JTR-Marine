@@ -1,0 +1,31 @@
+Mean SNR_miss (dB), random 30%, internal test gathers, mask-seed offset {'random': 587}
+model            1500m     3000m     4500m  MEPA_SP_200_  GC01_SP1100_  IT065_SP1000  IT89_33_SP60  M31_SP250_55  M32_SP500_80
+multi             4.79      8.79      9.43          3.02          6.56          7.33         10.26         10.65          8.20
+single_1500       4.77      3.43      1.99          3.04          6.50          2.94          3.92          2.46          1.52
+single_3000       0.96      7.72      5.53          0.04          1.89          6.56          8.89          6.30          4.76
+single_4500       0.49      5.97      8.37         -0.43          1.41          5.00          6.95          9.56          7.19
+loo_fold0         4.52      9.14      9.81          2.51          6.53          7.59         10.70         10.96          8.66
+loo_fold1         4.16      9.04      9.63          2.99          5.33          7.50         10.59         10.79          8.47
+loo_fold2         4.90      8.11      9.77          3.09          6.71          5.55         10.67         10.91          8.62
+logo_1500         1.55      8.39      8.88          0.44          2.66          7.05          9.72         10.06          7.69
+logo_3000         4.70      6.33      8.99          2.97          6.42          5.44          7.21         10.17          7.80
+logo_4500         4.71      8.44      5.38          2.97          6.45          7.14          9.75          6.07          4.70
+
+Comparison with Table 6 (paper value vs this evaluation, per geometry):
+  multi        1500 m: paper  4.79  matrix  4.79  diff +0.00  OK
+  multi        3000 m: paper  8.79  matrix  8.79  diff +0.00  OK
+  multi        4500 m: paper  9.43  matrix  9.43  diff -0.00  OK
+  single_1500  1500 m: paper  1.76  matrix  4.77  diff +3.01  DIFFERENT
+  single_3000  3000 m: paper  2.51  matrix  7.72  diff +5.21  DIFFERENT
+  single_4500  4500 m: paper  2.39  matrix  8.37  diff +5.98  DIFFERENT
+  loo_fold0    1500 m: paper  0.98  matrix  4.52  diff +3.54  DIFFERENT
+  loo_fold1    3000 m: paper  2.03  matrix  9.04  diff +7.01  DIFFERENT
+  loo_fold2    4500 m: paper  2.00  matrix  9.77  diff +7.77  DIFFERENT
+
+Leave-one-geometry-out (held-out geometry vs multi on the same gathers):
+  logo_1500: 1500 m never seen in training:  1.55  (multi  4.79, diff -3.24)
+  logo_3000: 3000 m never seen in training:  6.33  (multi  8.79, diff -2.47)
+  logo_4500: 4500 m never seen in training:  5.38  (multi  9.43, diff -4.04)
+  loo_fold0 on its held-out line MEPA_SP_200_500: 2.51
+  loo_fold1 on its held-out line GC01_SP1100_1400: 5.33
+  loo_fold2 on its held-out line IT065_SP1000_1300: 5.55
